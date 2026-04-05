@@ -7,7 +7,6 @@
 
   roles:
     - geerlingguy.pip
-    - geerlingguy.docker
 
   tasks:
     - name: Create Redmine env file
