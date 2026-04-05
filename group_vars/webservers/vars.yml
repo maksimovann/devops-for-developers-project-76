@@ -1,0 +1,7 @@
+redmine_port: 80
+redmine_image: redmine:5.1
+
+db_host: db.example.internal
+db_name: redmine
+db_user: redmine
+db_password: "{{ vault_db_password }}"
