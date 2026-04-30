@@ -7,7 +7,6 @@
 
   roles:
     - geerlingguy.pip
-    - geerlingguy.docker
     - role: datadog.datadog
       tags: monitoring
 
