@@ -6,7 +6,7 @@ db_name: redmine
 db_user: redmine
 db_password: "{{ vault_db_password }}"
 
-datadog_api_key: "{{ vault_datadog_api_key }}"
+datadog_api_key: datadog_api_key: "fake_api_key_123"
 datadog_site: "datadoghq.com"
 
 datadog_checks:
