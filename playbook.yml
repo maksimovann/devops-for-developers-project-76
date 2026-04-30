@@ -1,4 +1,5 @@
-- hosts: all
+- name: Prepare and deploy Redmine
+  hosts: all
   become: true
 
   vars:
