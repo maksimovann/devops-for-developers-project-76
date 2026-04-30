@@ -15,7 +15,7 @@
     - name: Create Redmine env file
       ansible.builtin.template:
         src: templates/redmine.env.j2
-        dest: /home/{{ ansible_user }}/redmine.env
+        dest: /tmp/redmine.env
         mode: '0644'
       tags:
         - deploy
@@ -28,6 +28,6 @@
         restart_policy: always
         ports:
           - "{{ redmine_port }}:3000"
-        env_file: /home/{{ ansible_user }}/redmine.env
+        env_file: /tmp/redmine.env
       tags:
         - deploy
