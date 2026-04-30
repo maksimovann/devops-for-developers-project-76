@@ -9,6 +9,7 @@
     - geerlingguy.pip
     - role: datadog.datadog
       tags: monitoring
+      when: "'webservers' in group_names"
 
   tasks:
     - name: Create Redmine env file
